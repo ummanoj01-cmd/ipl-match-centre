@@ -16,5 +16,6 @@ Open `index.html` in a browser, or use VS Code Live Server.
 
 ## Evidence
 
-Full-page desktop and mobile screenshots, plus a two-page PDF, are in the
+Full-page desktop and mobile screenshots, the repository screenshot, and a
+PDF containing the screenshots and repository URL are in the
 [`evidence`](./evidence) folder.
