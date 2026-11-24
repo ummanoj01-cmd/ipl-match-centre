@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#111622">
+    <meta name="description" content="The IPL Match Centre: fixtures, match-day information, and fan guidelines.">
+    <title>IPL Match Centre | The season starts here</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#home" aria-label="IPL Match Centre home">
+          <span class="brand-mark" aria-hidden="true"><span>IPL</span></span>
+          <span class="brand-copy"><strong>IPL</strong><small>MATCH CENTRE</small></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="primary-nav" id="primary-navigation" aria-label="Main navigation">
+          <a class="nav-link active" href="#home">Home</a>
+          <a class="nav-link" href="#schedule">Match schedule</a>
+          <a class="nav-link" href="#guidelines">Fan guidelines</a>
+          <a class="nav-cta" href="#schedule">Explore fixtures <span aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="hero-orbit orbit-one" aria-hidden="true"></div>
+        <div class="hero-orbit orbit-two" aria-hidden="true"></div>
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="live-dot" aria-hidden="true"></span> THE BIGGEST CRICKET PARTY</p>
+            <h1 id="hero-title">Every match.<br><span>One big feeling.</span></h1>
+            <p class="hero-description">The lights are on, the stands are loud, and every ball could change everything. Your season starts right here.</p>
+            <a class="hero-button" href="#schedule">Find your next match <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-feature" aria-label="Featured fixture: Mumbai Indians versus Chennai Super Kings, 18 April at 7:30 PM">
+            <div class="feature-top"><span class="feature-label">FEATURED FIXTURE</span><span class="feature-date">18 APR · 7:30 PM</span></div>
+            <div class="feature-teams">
+              <div class="feature-team"><span class="team-crest crest-mi">MI</span><span>Mumbai<br>Indians</span></div>
+              <span class="versus">VS</span>
+              <div class="feature-team right"><span class="team-crest crest-csk">CSK</span><span>Chennai<br>Super Kings</span></div>
+            </div>
+            <div class="feature-bottom"><span>Wankhede Stadium</span><span class="feature-arrow" aria-hidden="true">↗</span></div>
+          </div>
+        </div>
+        <div class="hero-bottom" aria-hidden="true"><span>INDIA'S BIGGEST CRICKET FESTIVAL</span><span>20 TEAMS · 1 TROPHY · ENDLESS DRAMA</span></div>
+      </section>
+
+      <section class="schedule-section section-wrap" id="schedule" aria-labelledby="schedule-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow dark-eyebrow">DON'T MISS A BALL</p>
+            <h2 id="schedule-title">Upcoming <span>fixtures</span></h2>
+          </div>
+          <p class="section-intro">Pick your team, circle the date, and get ready for the roar.</p>
+        </div>
+
+        <div class="schedule-toolbar">
+          <div class="filter-field">
+            <label for="team-filter">Filter by team</label>
+            <div class="select-wrap">
+              <select id="team-filter" name="team">
+                <option value="all">All teams</option>
+                <option value="csk">Chennai Super Kings</option>
+                <option value="dc">Delhi Capitals</option>
+                <option value="gt">Gujarat Titans</option>
+                <option value="kkr">Kolkata Knight Riders</option>
+                <option value="lsg">Lucknow Super Giants</option>
+                <option value="mi">Mumbai Indians</option>
+                <option value="pbks">Punjab Kings</option>
+                <option value="rr">Rajasthan Royals</option>
+                <option value="rcb">Royal Challengers Bengaluru</option>
+                <option value="srh">Sunrisers Hyderabad</option>
+              </select>
+              <span aria-hidden="true">⌄</span>
+            </div>
+          </div>
+          <div class="view-controls" role="group" aria-label="Schedule display">
+            <span class="view-label">View</span>
+            <button class="view-button is-selected" type="button" data-view="grid" aria-pressed="true" aria-label="Show matches in grid view">
+              <span class="grid-icon" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span>Grid</span>
+            </button>
+            <button class="view-button" type="button" data-view="list" aria-pressed="false" aria-label="Show matches in list view">
+              <span class="list-icon" aria-hidden="true"><i></i><i></i><i></i></span><span>List</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="schedule-grid" id="match-list" aria-live="polite">
+          <article class="match-card" data-teams="mi csk">
+            <div class="card-top"><span class="match-number">MATCH 01</span><span class="match-status"><i></i> UPCOMING</span></div>
+            <p class="match-date">FRI, 18 APRIL <span>·</span> 7:30 PM IST</p>
+            <div class="match-teams">
+              <div class="match-side"><span class="team-crest crest-mi">MI</span><div><strong>Mumbai Indians</strong><small>Mumbai</small></div></div>
+              <span class="match-vs">VS</span>
+              <div class="match-side"><span class="team-crest crest-csk">CSK</span><div><strong>Chennai Super Kings</strong><small>Chennai</small></div></div>
+            </div>
+            <div class="match-card-bottom"><span class="venue-icon" aria-hidden="true">⌖</span> Wankhede Stadium, Mumbai <span class="card-arrow" aria-hidden="true">↗</span></div>
+          </article>
+          <article class="match-card" data-teams="rcb kkr">
+            <div class="card-top"><span class="match-number">MATCH 02</span><span class="match-status"><i></i> UPCOMING</span></div>
+            <p class="match-date">SAT, 19 APRIL <span>·</span> 7:30 PM IST</p>
+            <div class="match-teams">
+              <div class="match-side"><span class="team-crest crest-rcb">RCB</span><div><strong>Royal Challengers Bengaluru</strong><small>Bengaluru</small></div></div>
+              <span class="match-vs">VS</span>
+              <div class="match-side"><span class="team-crest crest-kkr">KKR</span><div><strong>Kolkata Knight Riders</strong><small>Kolkata</small></div></div>
+            </div>
+            <div class="match-card-bottom"><span class="venue-icon" aria-hidden="true">⌖</span> M. Chinnaswamy Stadium, Bengaluru <span class="card-arrow" aria-hidden="true">↗</span></div>
+          </article>
+          <article class="match-card" data-teams="rr srh">
+            <div class="card-top"><span class="match-number">MATCH 03</span><span class="match-status"><i></i> UPCOMING</span></div>
+            <p class="match-date">SUN, 20 APRIL <span>·</span> 3:30 PM IST</p>
+            <div class="match-teams">
+              <div class="match-side"><span class="team-crest crest-rr">RR</span><div><strong>Rajasthan Royals</strong><small>Jaipur</small></div></div>
+              <span class="match-vs">VS</span>
+              <div class="match-side"><span class="team-crest crest-srh">SRH</span><div><strong>Sunrisers Hyderabad</strong><small>Hyderabad</small></div></div>
+            </div>
+            <div class="match-card-bottom"><span class="venue-icon" aria-hidden="true">⌖</span> Sawai Mansingh Stadium, Jaipur <span class="card-arrow" aria-hidden="true">↗</span></div>
+          </article>
+          <article class="match-card" data-teams="gt pbks">
+            <div class="card-top"><span class="match-number">MATCH 04</span><span class="match-status"><i></i> UPCOMING</span></div>
+            <p class="match-date">SUN, 20 APRIL <span>·</span> 7:30 PM IST</p>
+            <div class="match-teams">
+              <div class="match-side"><span class="team-crest crest-gt">GT</span><div><strong>Gujarat Titans</strong><small>Ahmedabad</small></div></div>
+              <span class="match-vs">VS</span>
+              <div class="match-side"><span class="team-crest crest-pbks">PBKS</span><div><strong>Punjab Kings</strong><small>Mullanpur</small></div></div>
+            </div>
+            <div class="match-card-bottom"><span class="venue-icon" aria-hidden="true">⌖</span> Narendra Modi Stadium, Ahmedabad <span class="card-arrow" aria-hidden="true">↗</span></div>
+          </article>
+          <article class="match-card" data-teams="dc lsg">
+            <div class="card-top"><span class="match-number">MATCH 05</span><span class="match-status"><i></i> UPCOMING</span></div>
+            <p class="match-date">MON, 21 APRIL <span>·</span> 7:30 PM IST</p>
+            <div class="match-teams">
+              <div class="match-side"><span class="team-crest crest-dc">DC</span><div><strong>Delhi Capitals</strong><small>Delhi</small></div></div>
+              <span class="match-vs">VS</span>
+              <div class="match-side"><span class="team-crest crest-lsg">LSG</span><div><strong>Lucknow Super Giants</strong><small>Lucknow</small></div></div>
+            </div>
+            <div class="match-card-bottom"><span class="venue-icon" aria-hidden="true">⌖</span> Arun Jaitley Stadium, Delhi <span class="card-arrow" aria-hidden="true">↗</span></div>
+          </article>
+          <article class="match-card" data-teams="csk mi">
+            <div class="card-top"><span class="match-number">MATCH 06</span><span class="match-status"><i></i> UPCOMING</span></div>
+            <p class="match-date">TUE, 22 APRIL <span>·</span> 7:30 PM IST</p>
+            <div class="match-teams">
+              <div class="match-side"><span class="team-crest crest-csk">CSK</span><div><strong>Chennai Super Kings</strong><small>Chennai</small></div></div>
+              <span class="match-vs">VS</span>
+              <div class="match-side"><span class="team-crest crest-mi">MI</span><div><strong>Mumbai Indians</strong><small>Mumbai</small></div></div>
+            </div>
+            <div class="match-card-bottom"><span class="venue-icon" aria-hidden="true">⌖</span> M. A. Chidambaram Stadium, Chennai <span class="card-arrow" aria-hidden="true">↗</span></div>
+          </article>
+          <p class="empty-state" hidden>No fixtures found for this team in this round.</p>
+        </div>
+        <p class="fixture-note">Fixture details are sample information and may be subject to change.</p>
+      </section>
+
+      <section class="guidelines-section" id="guidelines" aria-labelledby="guidelines-title">
+        <div class="section-wrap">
+          <div class="guidelines-heading">
+            <div><p class="eyebrow">GOOD VIBES ONLY</p><h2 id="guidelines-title">Make it a <span>great game.</span></h2></div>
+            <p>Bring the energy. Look out for each other. Keep the cricket the main event.</p>
+          </div>
+          <div class="guidelines-grid">
+            <article class="guideline-card"><span class="guideline-number">01</span><span class="guideline-icon" aria-hidden="true">✦</span><h3>Play fair, cheer loud</h3><p>Celebrate every boundary and back your team with pride. Keep it respectful—rivalry is better when everyone feels welcome.</p></article>
+            <article class="guideline-card"><span class="guideline-number">02</span><span class="guideline-icon" aria-hidden="true">⌂</span><h3>Stay safe together</h3><p>Follow venue staff directions, use marked entrances and exits, and keep aisles clear so everyone can enjoy the match safely.</p></article>
+            <article class="guideline-card"><span class="guideline-number">03</span><span class="guideline-icon" aria-hidden="true">◎</span><h3>Leave a lighter footprint</h3><p>Use the bins provided, bring a reusable bottle where permitted, and help keep the stands as brilliant as the game.</p></article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#home" aria-label="IPL Match Centre home"><span class="brand-mark" aria-hidden="true"><span>IPL</span></span><span class="brand-copy"><strong>IPL</strong><small>MATCH CENTRE</small></span></a>
+      <p>Cricket is better together. <span>See you in the stands.</span></p>
+      <a href="#home" class="back-top">Back to top ↑</a>
+    </footer>
+  </body>
+</html>
